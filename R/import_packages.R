@@ -1,3 +1,3 @@
-#' @import Compositional nloptr
+#' @import nloptr
 #' @export alpha.estimates beta.estimates CausalE SparseMCMM
 NULL
