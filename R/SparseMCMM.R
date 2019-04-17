@@ -117,7 +117,9 @@ SparseMCMM=function(Treatment,otu.com,outcome,covariates=NULL,covariate.fix=NULL
 
     if(is.null(colnames(otu.com))) colnames(me.ind)=1:otu.num else colnames(me.ind)=colnames(otu.com)
 
-    me.ind=me.ind[,me.ind[1,]!=0]
+    me.ind=me.ind[,(sign(me.95lower)*sign(me.95upper))==1]
+
+
 
   }
 
