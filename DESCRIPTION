@@ -1,0 +1,14 @@
+Package: SparseMCMM
+Title: SparseMCMM: Estimating and testing the microbial causal mediation effect with the high-dimensional and compositional microbiome data
+Version: 0.1.0
+Date: 2019-04-17
+Author: Chan Wang, Jiyuan Hu, Martin J. Blaser, Huilin Li.
+Maintainer: Chan Wang <Chan.Wang@nyulangone.org> and Huilin Li <Huilin.Li@nyulangone.org>
+Description: Sparse Microbial Causal Mediation Model (SparseMCMM) is designed for the high dimensional and compositional microbiome data in a typical three-factor (treatment,microbiome and outcome) causal study design. This model involves linear log-contrast regression and Dirichlet regression to model the causal mediation relationships of treatment, microbiome, covariates and outcomes.Under four sufficient identifiable assumptions, SparseMCMM gives the causal direct effect of treatment and causal mediation effect of the microbiota at both community level and individual, as well as, two tests OME and CME testing the overall mediation effect. Regularization techniques are used to identify signature causal microbes (midiators). This package has four main functions: alpha.estimates (estimating parameters in the linear log-contrast model), beta.estimates (estimating parameters in the Dirichlet regression model), CausalE (calculating causal DE, ME and individual ME estimates) and SparseMCMM (summaring results, calculating statistical significances of OME and CME with permutation procedure, and calculating 95% confidence interval (CI) estimates of component-wise MEs for the causal mediators with bootstrapping procedure). Finally, SparseMCMM can give a clear and sensible causal path among treatment, microbiome composition and outcome. Both simulation studies and real data applications showed the superb performance of SparseMCMM.
+Depends: Compositional,nloptr, R (>= 3.3.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/chanw0/SparseMCMM
+BugReports: http://github.com/chanw0/SparseMCMM/issues
+RoxygenNote: 6.1.1
