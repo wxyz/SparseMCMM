@@ -64,8 +64,8 @@ SparseMCMM=function(Treatment,otu.com,outcome,covariates=NULL,covariate.fix=NULL
 
 
 
-      ME=c(ME,max(abs(CausalEffect1[[1]][2]),abs(CausalEffect2[[1]][2]),abs(CausalEffect3[[1]][2])))
-      CME= c(CME,max(sum(CausalEffect1[[2]]^2),sum(CausalEffect2[[2]]^2),sum(CausalEffect3[[2]]^2)))
+      ME=c(ME,abs(CausalEffect3[[1]][2]))
+      CME= c(CME,sum(CausalEffect3[[2]]^2))
     }
 
 
