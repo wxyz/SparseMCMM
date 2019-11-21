@@ -7,7 +7,7 @@ SSR=function(alpha,Treatment,covariates,Z,outcome)
 {
   sample.n=nrow(Z)
 
-  X=cbind(rep(1,sample.num),Treatment,covariates,Z,Z*Treatment)
+  X=cbind(rep(1,sample.n),Treatment,covariates,Z,Z*Treatment)
 
   sum((outcome-c(X%*%alpha))^2)
 }
@@ -40,7 +40,7 @@ gradient = function(alpha,Treatment,covariates,Z,outcome,lambda){
   alphaZC=alpha[-(1:(2+q))]
   alphaZ=alphaZC[1:n];alphaC=alphaZC[-(1:n)]
 
-  X=cbind(rep(1,sample.num),Treatment,covariates,Z,Z*Treatment)
+  X=cbind(rep(1,sample.n),Treatment,covariates,Z,Z*Treatment)
 
   rr=c(rep(0,2+q),1/sqrt(alphaZ^2+alphaC^2),1/sqrt(alphaZ^2+alphaC^2))
   rr[which(alphaZ==0)+2+q]=0

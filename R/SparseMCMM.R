@@ -6,8 +6,12 @@ SparseMCMM=function(Treatment,otu.com,outcome,covariates=NULL,covariate.fix=NULL
                             max.iter=3000,num.per=NULL,bootstrap=NULL)
 {
 
+  ### using a small value to replace 0
+
+  otu.com=t(apply(otu.com,1,function(x) {if(min(x)==0) return((x+0.00001)/sum(x+0.00001)) else return(x)}))
 
   ########### parameter estimations
+
 
   alpha.estimation=alpha.estimates(Treatment,otu.com,outcome,covariates,
                            penalty.lambda1=lm.penalty1,penalty.lambda2=lm.penalty2,
