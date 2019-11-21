@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574354677343.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9A0D71F0",
+    "lastKnownWriteTime" : 1574354873,
+    "last_content_update" : 1574354873052,
+    "path" : "H:/SparseMCMM/R/alpha.estimates.R",
+    "project_path" : "R/alpha.estimates.R",
+    "properties" : {
+        "cursorPosition" : "19,32",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

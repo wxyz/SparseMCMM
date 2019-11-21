@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574354685447.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FD15CD96",
+    "lastKnownWriteTime" : 1574354848,
+    "last_content_update" : 1574354847934,
+    "path" : "H:/SparseMCMM/R/CausalEffect.R",
+    "project_path" : "R/CausalEffect.R",
+    "properties" : {
+        "cursorPosition" : "8,55",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
